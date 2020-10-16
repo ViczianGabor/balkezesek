@@ -108,6 +108,19 @@ namespace balkezesek
             return int.Parse(adat[0]);
         }
 
+        static void hetedik()
+        {
+            //sorrendbe a nagy listát név szerint
+            //és a neveket kiírnipl:
+            //a
+            //     aladar zsemle
+            //     almas pite
+            //b 
+            //     bugo csiga
+            //     berces jozsi
+            //(szorgalmi asszem)
+        }
+
         static void Main(string[] args)
         {
 
@@ -115,9 +128,8 @@ namespace balkezesek
             harmadik();
             negyedik();
             otodik();
-            
             hatodik();
-
+            hetedik();
 
             //Jim Abbott;1989-04-08;1999-07-21;200;75
 
