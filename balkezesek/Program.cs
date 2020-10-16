@@ -82,23 +82,31 @@ namespace balkezesek
         static void hatodik()
         {
             Console.Write("6. feladat:");
-            double osszeg = 0;
+            double suly = 0;
             double db = 0;
 
             for (int i = 0; i < lista.Count; i++)
             {
-                if (true)
+                if (szam >= datum(lista[i].ElsoDatum) && szam <= datum(lista[i].UtolsoDatum))
                 {
-
+                    suly += lista[i].Suly;
+                    db++;
                 }
             }
+            Console.WriteLine($"{suly/db:N2} font");
             
 
-            Console.WriteLine($"{atlag:N2}");
+            
 
 
         }
 
+
+        static int datum(string datum)
+        {
+            string[] adat = datum.Split('-');
+            return int.Parse(adat[0]);
+        }
 
         static void Main(string[] args)
         {
@@ -107,7 +115,7 @@ namespace balkezesek
             harmadik();
             negyedik();
             otodik();
-         
+            
             hatodik();
 
 

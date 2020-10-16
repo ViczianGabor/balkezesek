@@ -16,7 +16,7 @@ namespace balkezesek
 
         public int Suly { get; private set; }
 
-        public int Magassag { get; private set; }
+        public double Magassag { get; private set; }
 
 
 
@@ -28,8 +28,8 @@ namespace balkezesek
             ElsoDatum = a[1];
             UtolsoDatum = a[2];
             Suly = int.Parse(a[3]);
-            Magassag = int.Parse(a[4]);
-            i++;
+            Magassag = Convert.ToDouble(a[4]);
+            
 
 
         }
