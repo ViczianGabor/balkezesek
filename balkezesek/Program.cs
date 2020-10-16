@@ -87,7 +87,7 @@ namespace balkezesek
 
             for (int i = 0; i < lista.Count; i++)
             {
-                if (szam)
+                if (true)
                 {
 
                 }
